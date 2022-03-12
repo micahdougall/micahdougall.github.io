@@ -20,10 +20,32 @@ body {
 }
 .navbar-collapse {
     justify-content: flex-end;
-
 }
-.logo {
+.logo .white-logo {
+    margin-left: 1em !important;
+    text-transform: uppercase;
     font-size: 200%;
+    /*font-family: "JetBrains Mono ExtraBold", serif;*/
+    font-family: title-font, serif;
+}
+.logo .logo-overlay {
+    position:absolute;
+    min-height: 400%;
+    min-width: 10%;
+    /*left: 100;*/
+    /*top: 400;*/
+    /*padding-left: 10 !important;*/
+    font-family: moon-time,serif;
+    color: deeppink;
+    font-size: 150%;
+}
+.logo .pink-logo {
+    writing-mode: sideways-lr;
+    font-family: moon-time,serif;
+    color: deeppink;
+    font-size: 250%;
+    /*margin-inside: -10 !important;*/
+    /*padding-left: 10 !important;*/
 }
 .header {
     background-image: url('images/header-background.jpg');
@@ -47,6 +69,23 @@ body {
 	text-align: center;
 }
 .description h1 {
+	color: #ffffff;
+	font-size: 600%;
+    font-weight: bold;
+    /*font-family: fantasy;*/
+    font-family: title-font, serif;
+}
+.description .title-overlay {
+    position:absolute;
+    min-height: 50%;
+    min-width: 170%;
+    left: 0;
+    top: 0;
+    font-family: moon-time,serif;
+    color: deeppink;
+    font-size: 600%;
+}
+.description h2 {
 	color: #6ab446;
 }
 .description p {
@@ -76,6 +115,7 @@ body {
 	font-weight: 700;
 	margin-bottom: 20px;
 	text-transform: uppercase;
+    text-align: center;
 }
 .features img {
 	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
@@ -151,4 +191,13 @@ body {
     .features {
         margin: 0;
     }
+}
+@font-face {
+    font-family: "moon-time";
+    src: url("fonts/MoonTime-Regular.ttf");
+}
+@font-face {
+    font-family: "title-font";
+    /*src: url("fonts/CaviarDreams_Bold.ttf");*/
+    src: url("fonts/LEMONMILK-Medium.otf");
 }
